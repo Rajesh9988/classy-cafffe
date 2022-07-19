@@ -1,0 +1,889 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+}
+
+ /* section first css code start from here  */
+ #sect1{
+     width: 100%;
+     height: 110vh;
+     overflow: hidden;
+ }
+ #sect1 #navbar{
+     display: flex;
+     /* background-color:#FA4753; */
+     justify-content: right;
+     align-items: center;
+     position: relative;
+     width: 100%;
+     height: 70px;
+     box-shadow: 2px 2px  5px 2px rgb(96, 94, 94);
+     z-index: 1999;
+     background:#fff;
+     transition: all 1.5s ease;
+ }
+ #navbar ul{
+     display: flex;
+     justify-content: right;
+     margin-right: 60px;
+ }
+ .rajesh{
+    display: none !important;
+ }
+ #navbar ul li{
+     list-style: none;
+ }
+ #navbar ul li a{
+     text-decoration: none;
+     margin: 25px;
+     color: black;
+     font-size: 18px;
+     /* font-weight: bold; */
+     font-family: dancing, sans-serif !important;
+ }
+ .active ,#navbar ul li a:hover{
+     color:#FA4753 ;
+ }
+ .logo{
+ margin-right: 290px;
+}
+/* ham bar css code is here  */
+#icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    right: 20px;
+    display: none;
+    border-radius: 5px;
+
+}
+#icon #click{
+    font-size: 35px;
+    display: none;
+    line-height: 50px;
+}
+#icon #cross{
+    font-size: 35px;
+    display: none;
+    line-height: 50px;
+}
+
+/* slider and aside div portion css code is here  */
+.main_container{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.main_container .aside_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    background-color: #FA4753;
+    height: 568px;
+    position: relative;
+    /* border: 1px solid white; */
+}
+.aside_div h1{
+    font-size: 3rem;
+    position: relative;
+    bottom: 50px;
+    color: white;
+}
+.aside_div p{
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 265px;
+    font-weight: bold;
+}
+.aside_div .button_1{
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    color:#FA4753;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top: 330px;
+    margin-right: 75px;
+    border-radius: 2px;
+}
+
+/* main slider css code is here  */
+.main_container .slider_div{
+    width: 915px;
+    height: 568px;
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    scroll-snap-points-x: none;
+}
+.slider_div::-webkit-scrollbar{
+    display: none;
+}
+.slider_div img{
+    width: 915px;
+    height: 568px;
+    overflow: hidden;  
+}
+
+
+.main_container .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color:rgba(243, 80, 80,0.5);
+    z-index: 999;
+    position: absolute;
+    top: 370px;
+    left: 450px;
+    color: white;
+    border-radius: 50%;
+}
+.main_container .next i{
+    font-size: 30px;
+}
+
+.main_container .prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color:rgba(243, 80, 80,0.5);
+    z-index: 999;
+    position: absolute;
+    top: 370px;
+    left: 1100px;
+    border-radius: 50%;
+    color: white;
+}
+.main_container .prev i{
+    font-size: 30px;
+}
+
+
+/* carousel css code from google  */
+
+   .carousel-container {
+    width: 915px;
+    height: 568px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    /* overflow-y: hidden; */
+  }
+   .carousel-container .item{
+    width: 915px;
+    height: 568px;
+    position: relative;
+    display: none;
+    animation: fade 0.3s ease-in-out;
+  }
+  
+   .carousel-container .image {
+    width: 915px;
+    height: 568px;
+    display: flex;
+  }
+   .carousel-container.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+background-size: cover;
+  }
+   .carousel-container.text {
+    width: 100%;
+    padding: 0.625rem 0.9375rem;
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+   .carousel-container{
+    margin: 0.5rem 0 0 0;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+   .carousel-container .prev,
+  .carousel-container .next {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.3125rem;
+    position: absolute;
+    top: 288px;
+    user-select: none;
+    font-size: 1rem;
+    color: #f2f2f2;
+    border-radius: 50%;
+    transition: 0.6s ease;
+  }
+  .carousel-container .prev:focus, .carousel-container .prev:hover,
+   .carousel-container .next:focus,
+  .carousel-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+   .carousel-container .prev {
+    left: 100px;
+  }
+   .carousel-container .next {
+    left: 770px;
+  }
+   /* .carousel-container{
+    padding: 0.9874rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  @keyframes fade {
+    from {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+/* section two css code start from here  */
+#sect2{
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+}
+
+/* main container  */
+.m-container{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+/* first div code  */
+.first-div{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 50%;
+    position: relative;
+}
+.first-div .child-div{
+    display: inline-block;
+    margin: 0px 70px;
+    width: 500px;
+}
+.first-div .child-div span{
+    font-size: 28px;
+    font-family: dancing ,sans-serif;
+    color: #FA4753;
+}
+.first-div .child-div h1{
+    font-size: 2rem;
+    margin-top: 20px;
+    font-family: dancing ,sans-serif;
+    font-weight: bold;
+}
+.first-div .child-div p{
+    font-size: 18px;
+    font-family: dancing ,sans-serif;
+    margin-top: 20px;
+    color: rgb(113, 111, 111);
+}
+.first-div .child-div p a{
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+/* second div css start from here  */
+.second-div{
+    display: flex;
+    width: 89%;
+    height: 200px;
+    margin: 0px 70px;
+    margin-top: 20px;
+    justify-content: left;
+    align-items: center;
+}
+.second-div .s-boxes{
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+    overflow: hidden;
+}
+/* images in s-boxes  */
+.second-div .s-boxes img{
+    width: 150px;
+    height: 150px;
+}
+
+
+/* video portion css code is here  */
+.video-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    background-image: url(/img/about-video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 70px;
+    position: relative;
+    border-radius: 2px;
+}
+.video-div .play-button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      z-index: 1;
+      background-color: #FA4753;
+      border-radius: 50%;
+}
+.video-div .play-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* section three start form here  */
+#sect3{
+    width: 100%;
+    height: 130vh;
+    z-index: 0;
+    background-color: rgba(255, 239, 239, 0.4);
+}
+.f-menu-div{
+    width: 350px;
+    height: 250px;
+    margin: 0px 70px;
+    position: relative;
+}
+.f-menu-div span{
+    font-size: 18px;
+    position: absolute;
+    top: 40px;
+    font-weight: bold;
+    font-family: dancing,sans-serif;
+    letter-spacing: 1px;
+    color: #FA4753;
+}
+.f-menu-div h1{
+    font-size: 2.6rem;
+    position: absolute;
+    top: 80px;
+    font-weight: bold;
+    font-family: dancing,sans-serif;
+}
+#sect3 .slider-box{
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    /* height: 400px; */
+    /* z-index: 1; */
+    /* margin: 0px 10px; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+}
+.slider-box::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    width: 2210px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    /* position: relative; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    /* overflow: hidden; */
+}
+.slider-box .samebutton{
+   width: 50px;
+   height: 50px;
+   position: relative;
+   margin: 20px;
+   left: 550px;
+   bottom: 80px;
+   background-color: rgba(255, 239, 239, 0.4);
+   border: none;
+   font-size: 25px;
+   color: black;
+}
+
+.slide .sld-div{
+    width: 230px;
+    height: 350px;
+    margin: 40px;
+    position: relative;
+    background-image: url(/img/food1.jpg);
+    background-size: cover;
+}
+.slide .sld-div .price-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    font-family: dancing,sans-serif;
+    width: 70px;
+    height: 70px;
+    background-color: #FA4753;
+}
+.slide .sld-div .overlay-div{
+    width: 230px;
+    height: 3px;
+    background-color: #FA4753;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slide .sld-div .overlay-div h1{
+    font-size: 1.7rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    font-family: dancing,sans-serif;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.slide .sld-div .overlay-div p{
+    font-size: 18px;
+    color: white;
+    font-family: dancing,sans-serif;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.sld-div:hover  .overlay-div{
+    height: 190px;
+    
+}
+.sld-div:hover  .overlay-div h1{
+    opacity: 1;
+}
+.sld-div:hover  .overlay-div p{
+    opacity: 1;
+}
+.slider-box .nextslide,.prevslide{
+    margin-top: 100px;
+}
+
+
+/* section four is start from here  */
+#sect4{
+    width: 100%;
+    height: 130vh;
+}
+#sect4 .container{
+    width: 100%;
+    height: 130vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#sect4 .container .row-1{
+    display:flex;
+    margin: 0px 70px;
+    height: 250px;
+    width: 550px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 280px;
+}
+.container .row-1 .section-heading{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+}
+.container .row-1 .section-heading h3{
+   font-size: 1.5rem;
+   font-family: dancing,sans-serif;
+   margin-bottom: 35px;
+   color: #FA4753;
+}
+.container .row-1 .section-heading h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 45px;
+    font-family: dancing,sans-serif;
+}
+/* second cheaf portion css code is here  */
+.container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    position: relative;
+}
+.container .row .chef-item{
+    border: 1px solid black;
+    width: 350px;
+    height: 500px;
+    margin: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    transition: all 0.4s ease-in-out;
+    border-radius: 4px;
+}
+.chef-item:hover{
+    border-color:  #FA4753 !important;
+}
+
+.container .row .chef-item .down-content{
+    width: 300px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.chef-item:hover .down-content h4{
+    color: #FA4753;
+}
+.container .row .chef-item .down-content h4{
+   font-size: 28px;
+   font-weight: 700;
+   font-family: dancing,sans-serif;
+   margin-top: 20px;
+}
+.container .row .chef-item .down-content span{
+    font-size: 20px;
+    margin-top: 3px;
+   font-family: dancing,sans-serif;
+
+}
+.container .row .chef-item .thumb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    background-size: cover;
+    margin-top: 5px;
+    z-index: 0;
+}
+.container .row .chef-item .thumb img{
+    background-size: cover;
+    width: 330px;
+    height: 400px;
+    border-radius: 5px;
+}
+.chef-item .thumb .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    z-index: 1;
+    animation: fade 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+
+}
+@keyframes fade {
+    from {
+      opacity: 0.8;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.chef-item:hover .overlay{
+     height: 400px;
+     opacity: 1;
+}
+.container .row .chef-item .thumb .social-icons{
+    position: absolute;
+    display: flex;
+}
+.container .row .chef-item .thumb .social-icons li{
+   list-style: none;
+}
+.container .row .chef-item .thumb .social-icons li a{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+}
+.container .row .chef-item .thumb .social-icons li a i{
+    font-size: 30px;
+    display: flex;
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    z-index: 097;
+    background-color: white;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: all 0.4s ease-in-out;
+}
+.social-icons li a i:hover{
+     background-color: #FA4753 !important;
+     color: white !important;
+}
+
+
+/* section fifth css code start from here  */
+
+#sect5{
+    width: 100%;
+    height: 120vh;
+    background-image: url(/img/last.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.last-container{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    display: flex;
+
+}
+.last-container .layer{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8222);
+}
+.last-container .l-firdt-div{
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+    position: relative;
+    left: 40px;
+    top: 100px;
+}
+.l-firdt-div .l-content-div{
+    width: 500px;
+    height: 300px;
+    margin: 0px 20px;
+}
+.l-firdt-div .l-content-div span{
+    font-size: 20px;
+    color: white;
+    font-family: dancing,sans-serif;
+}
+.l-firdt-div .l-content-div h2{
+    color: white;
+    font-size: 2rem;
+    margin-top: 40px;
+    font-family: dancing,sans-serif;
+
+}
+.l-firdt-div .l-content-div p{
+    font-size: 18px;
+    color: white;
+    margin-top: 50px;
+    font-family: dancing,sans-serif;
+
+}
+.l-firdt-div .flex-div{
+    display: flex;
+    position: relative;
+    top: 80px;
+}
+    .l-firdt-div .l-small-div{
+  width: 250px;
+  height: 170px;
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+
+}
+.l-firdt-div .l-small-div h3{
+    z-index: 1;
+    position: relative;
+    top: 30px;
+    font-family: dancing,sans-serif;
+}
+.l-firdt-div .l-small-div span{
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 40px;
+    font-family: dancing,sans-serif;
+}
+.l-firdt-div .l-small-div .call-div{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    top: -50px;
+    background-color: #FA4753;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.l-firdt-div .l-small-div .call-div i{
+    color: white;
+    font-size: 40px;
+}
+
+
+/* second form div css code is here */
+.last-container .l-second-div{
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.l-second-div h1{
+    font-size: 2rem;
+    margin: 40px 125px;
+}
+.l-second-div .contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+}
+.l-second-div .contact input{
+    width: 200px;
+    height: 40px;
+  margin: 30px 20px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+#cars{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+  border: 1px solid gray;
+outline: none;
+font-size: 17px;
+color: gray;
+position: absolute;
+top: 210px;
+right: 270px;
+}
+.l-second-div button{
+    position: relative;
+    top: 300px;
+    left: 50px;
+    width: 400px;
+    height: 50px;
+    outline: none;
+    font-size: 17px;
+    background-color: #FA4753;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* section sixth css code strat from here  */
+#sect6{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    background-color: #FA4753;
+}
+#sect6 .sect-heading{
+width: 100%;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.sect-heading h4{
+    font-size: 20px;
+    margin: 15px 15px;
+    font-family: sans-serif;
+    color: #FA4753;
+}
+.sect-heading h1{
+    font-size: 40px;
+    margin: 10px 10px;
+    font-family: sans-serif;
+}
+.food-div{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-div .food-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.food-div .food-time span{
+    font-family: sans-serif;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+.active,.food-time:hover span{
+ color: #FA4753;
+}

@@ -1,0 +1,326 @@
+@media (max-width:500px) {
+    
+    #icon{
+        display: block;
+        display: flex;
+        margin: auto;
+        
+    }
+    #icon #click{
+        display: block;
+        position: absolute;
+        /* right: 25px; */
+    }
+    
+    #navbar ul{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255);
+        position: absolute;
+        top: 100px;
+        left: 0.3px;
+        width: 411.5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    #navbar ul li{
+        margin: 15px 50px;
+        border-bottom: 1px dotted black;
+        padding: 0px 10px;
+    }
+    #navbar ul li a{
+        margin: 0px 20px;
+    }
+    .logo{
+        margin-right: 200px;
+    }
+    /* aside bar div portion css code here  */
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 62px;
+    }
+    .main_container .aside_div{
+        width: 500px;
+        height: 250px;
+        position: relative;
+    }
+    .aside_div h1{
+        margin-right: 110px;
+        position: absolute;
+        bottom: 170px;
+        font-size: 2.7rem;
+        font-family: 'Dancing Script', cursive;
+    }
+    .aside_div p{
+        top: 90px;
+        margin-right: 110px;
+    }
+    .aside_div .button_1{
+        top: 125px;
+        margin-right: 110px;
+        width: 200px;
+    }
+
+    /* carousel responsive code is here  */
+    .slider_div .lx-container-80{
+        height: 437px;
+    }
+    .carousel-container .prev {
+        left: 20px;
+      }
+      .carousel-container .next{
+        left: 350px;
+      }
+      /* section second responsive code is here  */
+      #sect2{
+          height: 100vh;
+          margin-top: 120px;
+      }
+      .m-container{
+          display: flex;
+          flex-direction: column;
+          height: 1000px;
+      }
+      .first-div .child-div{
+          margin: 0px 25px;
+          margin-top: -100px;
+          width: 300px;
+      }
+      .m-container .first-div .child-div h1
+      {
+        font-size: 2.7rem;    
+      }
+      .first-div .child-div p{
+          font-size: 16px;
+          letter-spacing: 1px;
+      }
+      .second-div{
+          width: 350px;
+          margin: 0px 20px;
+      }
+      .second-div .s-boxes{
+          width: 100px;
+          height: 100px;
+          margin-top: 20px;
+      }
+
+
+      /* section seconds second div css code is here  */
+      .video-div{
+          margin: 0px 25px;
+          width: 86%;
+          height: 300px;
+          margin-top: 45px;
+      }
+
+
+      #sect3{
+        margin-top: 50px;
+        height: 80vh;
+      }
+      #sect3 .f-menu-div{
+        margin: 0px 20px;
+        margin-top: 30px;
+      }
+      #sect3 .slider-box{
+          width: 300px;
+          height: 400px;
+          position: absolute;
+          left: 50px;
+         
+      }
+      .slider-box .slide{
+          width: 745%;
+          height: 400px;
+          position: absolute;
+          overflow-x: auto;
+          overflow-y:hidden;
+          animation: slide 10s infinite step-start;
+      }
+      .slider-box .slide  .sld-div{
+        width: 300px;
+        height: 400px;
+        margin: 10px;
+        /* animation: slide 30s infinite step-start; */
+      }
+      @keyframes slide {
+          0%{
+            transform: translateX(0);
+            /* background-image: url(/img/food1.jpg);
+            background-size: cover; */
+          }
+          20%{
+            transform: translateX(-15%);
+            /* background-image: url(/img/food2.jpg);
+            background-size: cover; */
+          }
+          40%{
+            transform: translateX(-29%);
+            /* background-image: url(/img/food3.jpg);
+            background-size: cover; */
+          }
+          60%{
+            transform: translateX(-58%);
+            /* background-image: url(/img/food4.jpg);
+            background-size: cover; */
+          }
+          80%{
+            transform: translateX(-100%);
+            /* background-image: url(/img/food5.jpg);
+            background-size: cover; */
+          }
+          100%{
+            /* background-image: url(/img/food6.jpg);
+            background-size: cover; */
+          }
+      }
+      .slide .sld-div .overlay-div{
+        width: 300px;
+      }
+      .slider-box .nextslide,.prevslide{
+        display: none;
+      }
+
+    
+      /* seectin four css code start from here  */
+      #sect4{
+        height: 250vh;
+        overflow: hidden;
+        margin-top: 80px;
+      }
+      .container{
+        width: 40% !important;
+      }
+      .container .row-1{
+        width: 350px !important;
+        display: inline-block !important;
+        position: absolute;
+        left: -600px;
+      }
+      .container .row-1 .section-heading{
+        position: relative;
+        left: -470px;
+      }
+
+      .container .row{
+        flex-direction: column;
+        margin-top: 600px;
+        position: absolute;
+        top: 150px;
+        left: -125px;
+      }
+
+
+
+/* section fifth reponsive css code is here  */
+#sect5{
+  height: 230vh;
+  margin-top: -190px;
+  /* background-attachment: fixed; */
+}
+#sect5 .layer{
+  height: 230vh;
+  
+}
+#sect5 .last-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.last-container  .l-firdt-div{
+  width: 400px;
+  height: 800px;
+  left: 4px;
+}
+.l-firdt-div .l-content-div{
+  width: 390px;
+  margin: 0px 5px;
+}
+.l-firdt-div .l-content-div span{
+  font-size: 24px;
+  margin-left: 10px;
+}
+.l-firdt-div .l-content-div h2{
+  font-size: 30px;
+  margin-left: 15px;
+}
+.l-firdt-div .l-content-div p{
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+.l-firdt-div .flex-div{
+  flex-direction: column;
+  top: 20px;
+}
+
+.l-firdt-div .flex-div .l-small-div{
+  margin: 40px 70px;
+  width: 250px;
+  height: 170px;
+}
+.l-firdt-div .flex-div .l-small-div h3{
+  top: -10px;
+}
+.l-firdt-div .flex-div .l-small-div span{
+  top: -10px;
+}
+.l-firdt-div .flex-div .l-small-div .call-div{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  top: -30px;
+}
+
+
+/* second form div css responsive code start from here  */
+
+
+.last-container .l-second-div{
+  top: 1000px;
+  width: 300px;
+  left: 5px;
+  height: 700px!important;
+  position: absolute;
+  left: 55px;
+}
+ .last-container .l-second-div h1{
+  margin: 40px 60px;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #FA4753;
+  position: relative;
+  left: 10px;
+}
+.l-second-div .contact{
+  flex-direction: column;
+  left: 40px;
+}
+.l-second-div .contact input{
+  width: 250px;
+  position: relative;
+  right: 33px;
+}
+
+.l-second-div button{
+  margin: 0px;
+  left: 35px;
+  top: 500px;
+  width: 230px;
+}
+
+}
+
+
+
+@media (min-width:375px) {
+  #sect5{
+    position: relative;
+    top: 300px !important;
+  }
+}
